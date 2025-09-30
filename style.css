@@ -382,3 +382,36 @@ select {
     grid-template-columns: 1fr;
   }
 }
+
+/* Attendee List Styling */
+.attendee-list-container {
+  margin-top: 0;
+}
+
+.attendee-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.attendee-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background-color: #f8fafc;
+  border-radius: 8px;
+  border-left: 3px solid #0071c5;
+}
+
+.attendee-name {
+  font-weight: 500;
+  color: #334155;
+}
+
+.attendee-team {
+  font-size: 14px;
+  color: #64748b;
+}
