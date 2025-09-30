@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Intel Sustainability Summit Check-In</title>
-    <!-- Add Font Awesome CSS -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -12,7 +11,6 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Hero section with Intel branding -->
     <div class="hero">
       <div class="hero-content">
         <img src="img/intel-logo.svg" alt="Intel Logo" class="intel-logo" />
@@ -24,7 +22,7 @@
         </p>
       </div>
     </div>
-    <!-- Attendance tracking -->
+
     <div class="attendance-tracker">
       <div class="attendance-header">
         <i class="fas fa-users"></i>
@@ -34,11 +32,10 @@
         <div id="progressBar" class="progress-bar"></div>
       </div>
     </div>
+
     <div class="container">
-      <!-- Feedback message -->
       <p id="greeting"></p>
 
-      <!-- Check-in form -->
       <form class="check-in" id="checkInForm">
         <label for="attendeeName" class="form-label">Attendee Check-In</label>
         <div class="form-group">
@@ -49,8 +46,9 @@
               name="attendeeName"
               placeholder="Enter name..."
               required
+              autocomplete="off"
             />
-            <select id="teamSelect" name="team" required>
+            <select id="teamSelect" name="team" required autocomplete="off">
               <option value="" disabled selected>Select Team...</option>
               <option value="water">Team Water Wise</option>
               <option value="zero">Team Net Zero</option>
@@ -63,7 +61,6 @@
         </div>
       </form>
 
-      <!-- Team stats -->
       <div class="team-stats">
         <h3>Team Attendance</h3>
         <div class="teams-grid">
@@ -85,7 +82,7 @@
 
     <footer class="footer">
       &copy; 2025 Intel •
-      <a
+      
         href="https://www.intel.com/content/www/us/en/corporate-responsibility/2030-goals.html"
         class="footer-link"
         >Sustainability Goals</a
